@@ -974,34 +974,6 @@ video {
   background-image: linear-gradient(to top, rgba(22, 23, 22, 1), rgba(102, 102, 102, 0));
 }
 
-.bg-\[url\(\'\.\/assets\/imgs\/affiliate\.jpg\'\)\] {
-  background-image: url('./assets/imgs/affiliate.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/imgs\/body_img\.jpg\'\)\] {
-  background-image: url('./assets/imgs/body_img.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/imgs\/content\.jpg\'\)\] {
-  background-image: url('./assets/imgs/content.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/imgs\/dropshipping\.jpg\'\)\] {
-  background-image: url('./assets/imgs/dropshipping.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/imgs\/hero_bg\.png\'\)\] {
-  background-image: url('./assets/imgs/hero_bg.png');
-}
-
-.bg-\[url\(\'\.\/assets\/imgs\/mind_img\.jpg\'\)\] {
-  background-image: url('./assets/imgs/mind_img.jpg');
-}
-
-.bg-\[url\(\'\.\/assets\/imgs\/wealth_img\.jpg\'\)\] {
-  background-image: url('./assets/imgs/wealth_img.jpg');
-}
-
 .bg-cover {
   background-size: cover;
 }
