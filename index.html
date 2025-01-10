@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./assets/css/output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Ascend Academy</title>
+</head>
+
+<body class="bg-dark">
+    <div class="navbar absolute top-0 left-0 z-10 w-full flex justify-between items-center py-4 px-4 md:px-8"
+        data-aos="fade-in" data-aos-duration="4000">
+        <div class="logo"><img src="./assets/imgs/logo.png" alt="logo" class="w-24"></div>
+        <div class="nav_links text-white hidden md:block">
+            <ul class="flex items-center gap-4 text-lg font-semibold">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="actions hidden md:block">
+            <a href="#contact">
+                <Button class="bg-primary-400 px-4 py-3 rounded-lg font-semibold">Join Now</Button>
+            </a>
+        </div>
+        <button id="menuToggle" onclick="toggleSidebar()" class="md:hidden">
+            <div class="w-8 h-8 flex flex-col justify-center gap-1" id="menuIcon">
+                <div class="w-full h-1 bg-primary-400 rounded-full"></div>
+                <div class="w-full h-1 bg-primary-400 rounded-full"></div>
+                <div class="w-full h-1 bg-primary-400 rounded-full"></div>
+            </div>
+        </button>
+    </div>
+    <div class="sidebar absolute bg-dark top-0 left-[-100%] z-30 w-[250px] h-full flex flex-col px-8 justify-center"
+        id="sidebar">
+        <div class="sidebar_content flex flex-col justify-center gap-8 text-primary-400">
+            <ul class="flex flex-col gap-4 text-lg font-semibold">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="actions">
+                <a href="#contact">
+                    <Button class="bg-primary-400 px-4 py-3 rounded-lg font-semibold text-black"
+                        onclick="toggleSidebar()">Join Now</Button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div
+        class="hero relative bg-[url('/assets/imgs/hero_bg.png')] bg-cover bg-top bg-no-repeat h-screen flex items-center justify-center px-4">
+        <div class="hero_content text-white md:text-center z-10" data-aos="fade-up" data-aos-duration="4000"
+            data-aos-easing="ease-in-out">
+            <h1 class="text-4xl md:text-5xl font-bold leading-[1.43]">Master the <span
+                    class="text-primary-400">Game</span>, Make
+                the <span class="text-primary-400">Money</span><br>Live the <span class="text-primary-400">Dream!</span>
+            </h1>
+            <p class="hidden md:block md:text-lg mt-4 max-w-[850px]">Join us at The Ascend Academy and
+                embark on a journey of growth, empowerment, and opportunity.
+                Together, we can unlock your potential and pave the way
+                for a brighter future!</p>
+            <div class="hero_actions mt-8">
+                <a href="#contact">
+                    <Button class="bg-primary-400 px-6 py-3 text-black font-semibold rounded-full">Join Now</Button>
+                </a>
+            </div>
+        </div>
+        <div class="overlay w-full h-full absolute bg-black/60 z-0"></div>
+        <div class="bg-gradient-overlay absolute w-full h-full z-[1]"></div>
+    </div>
+    <section class="px-4 md:mx-24 md:pt-32 py-16 bg-dark" data-aos="fade-in" data-aos-duration="4000"
+        data-aos-easing="ease-in-out">
+        <div class="bg-box-gradient py-px">
+            <div class="guarantees py-4 md:px-28 flex justify-between bg-dark">
+                <div class="flex items-center gap-2">
+                    <img src="./assets/icons/tick.svg" alt="double-tick" class="w-6 md:w-8">
+                    <p class="text-white md:text-xl">
+                        No experience required
+                    </p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/icons/tick.svg" alt="double-tick" class="w-6 md:w-8">
+                    <p class="text-white md:text-xl">
+                        No age limit
+                    </p>
+                </div>
+                <div class="hidden md:flex items-center gap-2">
+                    <img src="./assets/icons/tick.svg" alt="double-tick" class="w-6 md:w-8">
+                    <p class="text-white md:text-xl">
+                        Flexible Learning
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="video-section flex flex-col items-center justify-center mt-16 md:mt-32">
+            <div class="rounded-lg border-2 border-primary-400 w-[304px] h-[171px] md:w-[900px] md:h-[506px]">
+
+            </div>
+            <div class="text-white text-center flex flex-col items-center mt-16">
+                <h2 class="text-2xl md:text-4xl font-semibold">Kickstart Your Journey to Financial Freedom With Skills
+                    That Pay!
+                </h2>
+                <p class="italic md:text-lg mt-2">...even if you're starting from nothing.</p>
+                <a href="#contact">
+                    <Button
+                        class="bg-primary-400 px-4 py-2 md:px-6 md:py-3 text-black font-semibold rounded-full flex items-center gap-2 mt-4"><img
+                            src="./assets/icons/lock.svg" alt="lock" class="w-4 md:w-6"> Unlock the Path</Button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="banner w-full bg-primary-400 py-2 flex gap-8 overflow-hidden">
+        <div class="flex gap-8 animate-marquee whitespace-nowrap">
+            <div class="flex gap-4">
+                <img src="./assets/icons/star.svg" alt="" class="w-6" />
+                <p class="md:text-lg font-semibold">Enroll today and get 20% off your first course!</p>
+            </div>
+            <div class="flex gap-4">
+                <img src="./assets/icons/star.svg" alt="" class="w-6" />
+                <p class="md:text-lg font-semibold">Enroll today and get 20% off your first course!</p>
+            </div>
+            <div class="flex gap-4">
+                <img src="./assets/icons/star.svg" alt="" class="w-6" />
+                <p class="md:text-lg font-semibold">Enroll today and get 20% off your first course!</p>
+            </div>
+            <div class="flex gap-4">
+                <img src="./assets/icons/star.svg" alt="" class="w-6" />
+                <p class="md:text-lg font-semibold">Enroll today and get 20% off your first course!</p>
+            </div>
+        </div>
+        <div class="flex gap-8 animate-marquee whitespace-nowrap">
+            <div class="flex gap-4">
+                <img src="./assets/icons/star.svg" alt="" class="w-6" />
+                <p class="md:text-lg font-semibold">Enroll today and get 20% off your first course!</p>
+            </div>
+            <div class="flex gap-4">
+                <img src="./assets/icons/star.svg" alt="" class="w-6" />
+                <p class="md:text-lg font-semibold">Enroll today and get 20% off your first course!</p>
+            </div>
+            <div class="flex gap-4">
+                <img src="./assets/icons/star.svg" alt="" class="w-6" />
+                <p class="md:text-lg font-semibold">Enroll today and get 20% off your first course!</p>
+            </div>
+            <div class="flex gap-4">
+                <img src="./assets/icons/star.svg" alt="" class="w-6" />
+                <p class="md:text-lg font-semibold">Enroll today and get 20% off your first course!</p>
+            </div>
+        </div>
+    </div>
+    <div id="popup"
+        class="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-dark rounded-lg p-6 w-full max-w-md shadow-lg relative">
+            <h3 class="text-2xl md:text-3xl text-white text-center">Register Today and get 20%
+                <span class="text-primary-400">Discount!</span>
+            </h3>
+            <form method="POST" id="popForm" class="flex flex-col items-center w-full mt-4">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <input type="hidden" name="subject" value="New Registration To Ascend Academy">
+                <input type="checkbox" name="botcheck" id="popBotCheck" style="display: none;">
+                <input type="text" name="name" placeholder="Full Name"
+                    class="px-4 py-2 rounded-lg bg-[#1F201F] text-white w-full mb-2" required>
+                <input type="text" name="mobile" placeholder="Phone Number"
+                    class="px-4 py-2 rounded-lg bg-[#1F201F] text-white w-full mb-4" required>
+
+                <div class="flex gap-2">
+                    <p class="bg-dark cursor-pointer px-4 py-2 md:px-6 md:py-3 text-primary-400 border border-primary-400 font-semibold rounded-full mt-2"
+                        id="closePopup">
+                        No thanks
+                    </p>
+                    <button class="bg-primary-400 px-4 py-2 md:px-6 md:py-3 text-black font-semibold rounded-full mt-2"
+                        id="popFormBtn">
+                        Let me in
+                    </button>
+                </div>
+                <p class="px-3 py-2 md:px-6 md:py-3 text-primary-400 font-semibold rounded-full mt-4" id="popResult"
+                    style="display: none;"></p>
+            </form>
+        </div>
+    </div>
+    <section class="px-4 md:mx-24 py-16 bg-dark md:pt-32">
+        <div class="why flex flex-col items-center" data-aos="fade-in" data-aos-duration="4000"
+            data-aos-easing="ease-in-out">
+            <h2 class="text-white text-2xl md:text-4xl font-semibold text-center">Why Ascend Academy?</h2>
+            <div class="flex md:flex-row flex-col gap-4 justify-center mt-12 md:mt-16">
+                <div
+                    class="card flex flex-col justify-center items-center gap-8 py-20 px-2 text-white bg-gradient-dark rounded-lg">
+                    <img src="./assets/icons/work.svg" alt="">
+                    <div class="text-center max-w-72">
+                        <h3 class="text-2xl font-bold">Practical Skills</h3>
+                        <p class="mt-4">Learn <span class="text-primary-400">money-making</span> techniques designed for
+                            real-world success.</p>
+                    </div>
+                </div>
+                <div
+                    class="card flex flex-col justify-center items-center gap-8 py-20 px-2 text-white bg-gradient-dark rounded-lg">
+                    <img src="./assets/icons/crown.svg" alt="">
+                    <div class="text-center max-w-72">
+                        <h3 class="text-2xl font-bold">Expert Mentorship</h3>
+                        <p class="mt-4">Courses taught by <span class="text-primary-400">industry leaders</span> who’ve
+                            been there and done that</p>
+                    </div>
+                </div>
+                <div
+                    class="card flex flex-col justify-center items-center gap-8 py-20 px-2 text-white bg-gradient-dark rounded-lg">
+                    <img src="./assets/icons/growth.svg" alt="">
+                    <div class="text-center max-w-72">
+                        <h3 class="text-2xl font-bold">Lifelong Learning</h3>
+                        <p class="mt-4">Unlock a lifetime of <span class="text-primary-400">skills</span> to keep
+                            growing.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#contact">
+                <Button class="bg-primary-400 px-6 py-3 mt-8 text-black font-semibold rounded-full">Give me
+                    access!</Button>
+            </a>
+        </div>
+    </section>
+    <div class="life pt-16 md:pt-32 bg-dark" data-aos="fade-in" data-aos-duration="4000" data-aos-easing="ease-in-out">
+        <div class="text-center text-white">
+            <h2 class="text-3xl md:text-[40px] font-semibold">Transform Your <span class="text-primary-400">Life</span>,
+                Not Just
+                Your Wealth</h2>
+            <p class="md:text-xl font-semibold mt-2">Achieve financial independence while unlocking your full potential
+                - <span class="text-primary-400">mind</span>, <span class="text-primary-400">body</span>, and <span
+                    class="text-primary-400">soul.</span></p>
+        </div>
+        <div class="grid grid-row-3 md:grid-cols-3 relative mt-8">
+            <div
+                class="group flex justify-center items-center text-white bg-[url('/assets/imgs/wealth_img.jpg')] bg-cover bg-center bg-no-repeat h-[300px]">
+                <h4 class="font-bold text-2xl z-[1] group-hover:scale-110">wealth<span class="text-primary-400">.</span></h4>
+            </div>
+            <div
+                class="group flex justify-center items-center text-white bg-[url('/assets/imgs/body_img.jpg')] bg-cover bg-center bg-no-repeat h-[300px]">
+                <h4 class="font-bold text-2xl z-[1] group-hover:scale-110">body<span class="text-primary-400">.</span></h4>
+            </div>
+            <div
+                class="group flex justify-center items-center text-white bg-[url('/assets/imgs/mind_img.jpg')] bg-cover bg-center bg-no-repeat h-[300px]">
+                <h4 class="font-bold text-2xl z-[1] group-hover:scale-110">mind<span class="text-primary-400">.</span></h4>
+            </div>
+            <div class="w-full h-full bg-black/50 absolute z-0"></div>
+        </div>
+        <div class="flex justify-center w-full mt-8">
+            <a href="#contact">
+                <Button class="bg-primary-400 px-6 py-3 text-black font-semibold rounded-full">I need this!</Button>
+            </a>
+        </div>
+    </div>
+    <section class="px-4 md:mx-24 py-16 md:py-32" data-aos="fade-in" data-aos-duration="4000"
+        data-aos-easing="ease-in-out">
+        <div class="flex flex-col items-center">
+            <h3 class="text-2xl md:text-4xl font-semibold relative text-white text-center">Your Path to Success: A Clear
+                Roadmap
+                <img src="./assets/imgs/line.png" alt="line" class="w-28 absolute -bottom-2 left-28 md:left-[215px]">
+            </h3>
+            <div class="steps_content relative h-auto px-12 py-60 ml-8 my-16 flex flex-col gap-60 md:gap-[350px]">
+                <div class="absolute top-0 left-0 w-1 h-full bg-white/30 -z-[2]">
+                    <div class="sticky top-0 left-0 -z-[1] w-[4px] h-60 bg-primary-400 transition-all duration-300">
+                    </div>
+                </div>
+                <div class="step max-w-[488px] relative">
+                    <div class="step_icon absolute text-lg md:text-2xl -left-[70px] md:-left-[78px] font-semibold z-20 w-12 h-12 md:w-16 md:h-16 rounded-full text-black flex justify-center items-center
+                            transition-colors duration-300 bg-primary-400">
+                        <h4 class="-mt-1">1</h4>
+                    </div>
+                    <div class="step_text transition-opacity duration-300 text-white">
+                        <h3 class='text-2xl md:text-3xl font-medium'>Join the Academy</h3>
+                        <p class='mt-2 mb-3'>Take the first step, secure your spot and unlock
+                            exclusive resources!</p>
+                        <a href="#contact">
+                            <Button
+                                class="bg-primary-400 px-3 py-2 md:px-6 md:py-3 text-black font-semibold rounded-full mt-4">Start
+                                the Path</Button>
+                        </a>
+                    </div>
+                </div>
+                <div class="step max-w-[488px] relative">
+                    <div class="step_icon absolute text-lg md:text-2xl -left-[70px] md:-left-[78px] font-semibold z-20 w-12 h-12 md:w-16 md:h-16 rounded-full text-black flex justify-center items-center
+                            transition-colors duration-300 bg-primary-400">
+                        <h4 class="-mt-1">2</h4>
+                    </div>
+                    <div class="step_text transition-opacity duration-300 text-white">
+                        <h3 class='text-2xl md:text-3xl font-medium'>Master High-Income Skills</h3>
+                        <p class='mt-2 mb-3'>Dive into hands-on learning that guarantees actionable results.</p>
+
+                        <a href="#contact">
+                            <Button
+                                class="bg-primary-400 px-3 py-2 md:px-6 md:py-3 text-black font-semibold rounded-full mt-4">Start
+                                the Path</Button>
+                        </a>
+                    </div>
+                </div>
+                <div class="step max-w-[488px] relative">
+                    <div class="step_icon absolute text-lg md:text-2xl -left-[70px] md:-left-[78px] font-semibold z-20 w-12 h-12 md:w-16 md:h-16 rounded-full text-black flex justify-center items-center
+                            transition-colors duration-300 bg-primary-400">
+                        <h4 class="-mt-1">3</h4>
+                    </div>
+                    <div class="step_text transition-opacity duration-300 text-white">
+                        <h3 class='text-2xl md:text-3xl font-medium'>Launch Your Success Journey</h3>
+                        <p class='mt-2 mb-3'>Apply your new skills to start earning your first $1,000 in record time.
+                        </p>
+                        <a href="#contact">
+                            <Button
+                                class="bg-primary-400 px-3 py-2 md:px-6 md:py-3 text-black font-semibold rounded-full mt-4">Start
+                                the Path</Button>
+                        </a>
+                    </div>
+                </div>
+                <div class="step max-w-[488px] relative">
+                    <div class="step_icon absolute text-lg md:text-2xl -left-[70px] md:-left-[78px] font-semibold z-20 w-12 h-12 md:w-16 md:h-16 rounded-full text-black flex justify-center items-center
+                            transition-colors duration-300 bg-primary-400">
+                        <h4 class="-mt-1">4</h4>
+                    </div>
+                    <div class="step_text transition-opacity duration-300 text-white">
+                        <h3 class='text-2xl md:text-3xl font-medium'>Scale to Freedom</h3>
+                        <p class='mt-2 mb-3'>Learn advanced strategies to grow from a side hustle to a full-time income
+                            source.</p>
+                        <a href="#contact">
+                            <Button
+                                class="bg-primary-400 px-3 py-2 md:px-6 md:py-3 text-black font-semibold rounded-full mt-4">Start
+                                the Path</Button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="cta w-full bg-primary-400 flex flex-col justify-center items-center py-16 md:mt-32 text-center">
+        <h3 class="text-2xl md:text-4xl font-semibold">There is no time better than now!</h3>
+        <p class="text-xl md:text-2xl font-semibold mt-2">Take action or be a loser</p>
+        <a href="#contact">
+            <Button class="text-primary-400 px-3 py-2 md:px-6 md:py-3 bg-black font-semibold rounded-full mt-4">Give me
+                access!</Button>
+        </a>
+    </div>
+    <section class="px-4 md:px-24 py-20 bg-dark">
+        <div class="courses flex flex-col items-center" data-aos="fade-in" data-aos-duration="4000"
+            data-aos-easing="ease-in-out">
+            <h2 class="text-3xl font-bold text-white relative">
+                Our <span class="">Courses</span>
+                <img src="./assets/imgs/line.png" alt="line" class="w-28 absolute -bottom-2 right-0">
+            </h2>
+            <div class="mt-16 flex flex-col gap-16">
+                <div class="flex md:flex-row flex-col gap-4">
+                    <div
+                        class="image w-[350px] h-[300px] bg-[url('/assets/imgs/dropshipping.jpg')] bg-cover bg-center bg-no-repeat rounded-lg">
+                    </div>
+                    <div class="content text-white max-w-md">
+                        <h4 class="text-3xl font-semibold">The Ultimate Dropshipping Course</h4>
+                        <p class="mt-2">Instead of just learning dropshipping, become
+                            the architect of a six-figure e-commerce
+                            business</p>
+                        <a href="#contact">
+                            <Button
+                                class="bg-primary-400 px-3 py-2 md:px-6 md:py-3 text-black font-semibold rounded-full mt-4">Enroll
+                                Now!</Button>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col gap-4">
+                    <div
+                        class="image w-[350px] h-[300px] bg-[url('/assets/imgs/affiliate.jpg')] bg-cover bg-center bg-no-repeat rounded-lg">
+                    </div>
+                    <div class="content text-white max-w-md">
+                        <h4 class="text-3xl font-semibold">Affiliate Marketing Mastery: From Beginner to Pro</h4>
+                        <p class="mt-2">Affiliate marketing? No. We teach you how to build a recurring revenue machine.
+                        </p>
+                        <a href="#contact">
+                            <Button
+                                class="bg-primary-400 px-3 py-2 md:px-6 md:py-3 text-black font-semibold rounded-full mt-4">Enroll
+                                Now!</Button>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col gap-4">
+                    <div
+                        class="image w-[350px] h-[300px] bg-[url('/assets/imgs/content.jpg')] bg-cover bg-center bg-no-repeat rounded-lg">
+                    </div>
+                    <div class="content text-white max-w-md">
+                        <h4 class="text-3xl font-semibold">Content Writing Mastery: Crafting Words That Convert</h4>
+                        <p class="mt-2">Content writing redefined: Write your way to financial independence.</p>
+                        <a href="#contact">
+                            <Button
+                                class="bg-primary-400 px-3 py-2 md:px-6 md:py-3 text-black font-semibold rounded-full mt-4">Enroll
+                                Now!</Button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact md:px-96 mt-32" id="contact" data-aos="fade-in" data-aos-duration="4000"
+            data-aos-easing="ease-in-out">
+            <h3 class="text-2xl md:text-3xl text-white text-center">I also want to be a <span
+                    class="text-primary-400">millionaire</span>, how can I?</h3>
+            <p class="md:text-xl text-white text-center mt-2">Just fill the form!</p>
+            <div class="flex justify-center mt-8">
+                <form method="POST" id="form" class="flex flex-col items-center w-full">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="hidden" name="subject" value="New Registration To Ascend Academy">
+                    <input type="checkbox" name="botcheck" id="botCheck" style="display: none;">
+                    <input type="text" name="name" placeholder="Full Name"
+                        class="px-4 py-2 rounded-lg bg-[#1F201F] text-white w-full">
+                    <input type="text" name="mobile" placeholder="Phone Number"
+                        class="px-4 py-3 mt-2 rounded-lg bg-[#1F201F] text-white w-full">
+                    <Button class="bg-primary-400 px-3 py-2 md:px-6 md:py-3 text-black font-semibold rounded-full mt-4"
+                        id="formBtn">Let
+                        me
+                        in</Button>
+                    <p class="px-3 py-2 md:px-6 md:py-3 text-primary-400 font-semibold rounded-full mt-4" id="result"
+                        style="display: none;"></p>
+
+                </form>
+            </div>
+        </div>
+        <div class="mind mt-16 md:mt-32" data-aos="fade-in" data-aos-duration="4000" data-aos-easing="ease-in-out">
+            <div class="text-center text-white">
+                <h3 class="text-2xl md:text-4xl font-semibold">Unlock a Balanced Life with Ascend Academy</h3>
+                <p class="md:text-xl mt-2">Empower your <span class="text-primary-400">mind</span>, <span
+                        class="text-primary-400">body</span>, and <span class="text-primary-400">spirit</span> to
+                    achieve sustainable <span class="text-primary-400">success.</span></p>
+            </div>
+            <div class="features flex flex-col py-12 gap-16">
+                <div class="text-white flex flex-col items-center">
+                    <img src="./assets/icons/mind.svg" alt="mind" class="w-16 md:w-24">
+                    <h4 class="text-3xl font-semibold mt-4">Mindfulness Practices</h4>
+                    <p class="mt-2 text-center">Access guided meditation exercises to stay focused and calm.</p>
+                    <a href="#contact">
+                        <Button
+                            class="text-black px-3 py-2 md:px-6 md:py-3 bg-primary-400 font-semibold rounded-full mt-4">Enroll
+                            Now</Button>
+                    </a>
+                </div>
+                <div class="text-white flex flex-col items-center">
+                    <img src="./assets/icons/life.svg" alt="life" class="w-16 md:w-24">
+                    <h4 class="text-3xl font-semibold mt-4">Work-Life Balance</h4>
+                    <p class="mt-2 text-center">Learn strategies to harmonize career ambitions with personal well-being.
+                    </p>
+                    <a href="#contact">
+                        <Button
+                            class="text-black px-3 py-2 md:px-6 md:py-3 bg-primary-400 font-semibold rounded-full mt-4">Enroll
+                            Now</Button>
+                    </a>
+                </div>
+                <div class="text-white flex flex-col items-center">
+                    <img src="./assets/icons/community.svg" alt="mind" class="w-16 md:w-24">
+                    <h4 class="text-3xl font-semibold mt-4">Community Wellness</h4>
+                    <p class="mt-2 text-center">Join a supportive network that values growth and mental health.</p>
+                    <a href="#contact">
+                        <Button
+                            class="text-black px-3 py-2 md:px-6 md:py-3 bg-primary-400 font-semibold rounded-full mt-4">Enroll
+                            Now</Button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="cta w-full bg-primary-400 flex flex-col justify-center items-center py-12 md:mt-16">
+        <h3 class="text-2xl md:text-4xl font-semibold">Only Few Seats Left</h3>
+        <p class="md:text-2xl font-semibold mt-2">Don't miss out the chance</p>
+        <a href="#contact">
+            <Button class="text-primary-400 px-3 py-2 md:px-6 md:py-3 bg-black font-semibold rounded-full mt-4">Give me
+                access!</Button>
+        </a>
+    </div>
+    <footer
+        class="px-4 md:px-12 py-8 flex md:flex-row flex-col gap-4 md:justify-between items-center text-white bg-dark">
+        <div class="logo"><img src="./assets/imgs/logo.png" alt="logo" class="w-24"></div>
+        <p class="hidden md:block">&#169; All rights reserved</p>
+        <div class="links flex items-center gap-4">
+            <a href=""><img src="./assets/icons/instagram.svg" alt="instagram" class="w-4 md:w-6"></a>
+            <a href=""><img src="./assets/icons/twitter.svg" alt="twitter" class="w-4 md:w-6"></a>
+            <a href=""><img src="./assets/icons/youtube.svg" alt="youtube" class="w-4 md:w-6"></a>
+        </div>
+        <p class="md:hidden block">&#169; All rights reserved</p>
+    </footer>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    function toggleSidebar() {
+        console.log("sidebar");
+
+        const sidebar = document.getElementById("sidebar");
+        const menuIcon = document.getElementById("menuIcon");
+
+        sidebar.classList.toggle("open");
+
+        menuIcon.classList.toggle("cross");
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            const offset = 150; 
+            const targetPosition = targetElement.offsetTop - offset;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth",
+            });
+        });
+    });
+</script>
+<script>
+
+    const popup = document.getElementById("popup");
+    const closePopup = document.getElementById("closePopup");
+
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 2000 && !popup.classList.contains('closed')) {
+            popup.classList.remove("hidden");
+            popup.classList.add("flex");
+        }
+    });
+
+    closePopup.addEventListener("click", () => {
+        popup.classList.add("hidden");
+        popup.classList.add("closed");
+    });
+</script>
+<script src="./assets/js/formSubmit.js"></script>
+
+</html>

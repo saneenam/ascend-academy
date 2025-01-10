@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-playFair;
+  }
+
+  @layer utilities {
+    .sidebar {
+        @apply fixed top-0 left-0 h-full bg-dark z-30 transition-transform duration-300;
+        transform: translateX(-100%);
+    }
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    #menuIcon.cross div:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    #menuIcon.cross div:nth-child(2) {
+      opacity: 0;
+    }
+    #menuIcon.cross div:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    #menuIcon div {
+        @apply transition-transform duration-300 ease-in-out opacity-100;
+    }
+}
