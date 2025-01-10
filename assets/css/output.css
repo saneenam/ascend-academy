@@ -974,6 +974,62 @@ video {
   background-image: linear-gradient(to top, rgba(22, 23, 22, 1), rgba(102, 102, 102, 0));
 }
 
+.bg-\[url\(\'\/\/imgs\/hero_bg\.png\'\)\] {
+  background-image: url('//imgs/hero_bg.png');
+}
+
+.bg-\[url\(\'\/imgs\/hero_bg\.png\'\)\] {
+  background-image: url('/imgs/hero_bg.png');
+}
+
+.bg-\[url\(\'\/\/imgs\/wealth_img\.jpg\'\)\] {
+  background-image: url('//imgs/wealth_img.jpg');
+}
+
+.bg-\[url\(\'\/imgs\/wealth_img\.jpg\'\)\] {
+  background-image: url('/imgs/wealth_img.jpg');
+}
+
+.bg-\[url\(\'\/\/imgs\/body_img\.jpg\'\)\] {
+  background-image: url('//imgs/body_img.jpg');
+}
+
+.bg-\[url\(\'\/imgs\/body_img\.jpg\'\)\] {
+  background-image: url('/imgs/body_img.jpg');
+}
+
+.bg-\[url\(\'\/\/imgs\/mind_img\.jpg\'\)\] {
+  background-image: url('//imgs/mind_img.jpg');
+}
+
+.bg-\[url\(\'\/imgs\/mind_img\.jpg\'\)\] {
+  background-image: url('/imgs/mind_img.jpg');
+}
+
+.bg-\[url\(\'\/\/imgs\/dropshipping\.jpg\'\)\] {
+  background-image: url('//imgs/dropshipping.jpg');
+}
+
+.bg-\[url\(\'\/imgs\/dropshipping\.jpg\'\)\] {
+  background-image: url('/imgs/dropshipping.jpg');
+}
+
+.bg-\[url\(\'\/\/imgs\/affiliate\.jpg\'\)\] {
+  background-image: url('//imgs/affiliate.jpg');
+}
+
+.bg-\[url\(\'\/imgs\/affiliate\.jpg\'\)\] {
+  background-image: url('/imgs/affiliate.jpg');
+}
+
+.bg-\[url\(\'\/\/imgs\/content\.jpg\'\)\] {
+  background-image: url('//imgs/content.jpg');
+}
+
+.bg-\[url\(\'\/imgs\/content\.jpg\'\)\] {
+  background-image: url('/imgs/content.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
