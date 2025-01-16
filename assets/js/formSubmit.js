@@ -10,7 +10,7 @@ form.addEventListener('submit', function (e) {
     result.style.display = "block";
     result.innerHTML = "just a sec.."
 
-    fetch('https://api.web3forms.com/submit', {
+    fetch('https://script.google.com/macros/s/AKfycbzg8yfNyLPFdjbAlEdcawTjyLvjhWHaMaMAj4ontGEOdjX2itWrsECq_CHM6nOjf_p_/exec', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ popForm.addEventListener('submit', function (e) {
     popResult.style.display = "block";
     popResult.innerHTML = "just a sec.."
 
-    fetch('https://api.web3forms.com/submit', {
+    fetch('https://script.google.com/macros/s/AKfycbzg8yfNyLPFdjbAlEdcawTjyLvjhWHaMaMAj4ontGEOdjX2itWrsECq_CHM6nOjf_p_/exec', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
