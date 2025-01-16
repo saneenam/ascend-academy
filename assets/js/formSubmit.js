@@ -5,18 +5,16 @@ const formBtn = document.getElementById('formBtn');
 form.addEventListener('submit', function (e) {
     e.preventDefault();
     const formData = new FormData(form);
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+    const queryParams = new URLSearchParams(formData).toString();
     result.style.display = "block";
     result.innerHTML = "just a sec.."
-
-    fetch('https://script.google.com/macros/s/AKfycbzg8yfNyLPFdjbAlEdcawTjyLvjhWHaMaMAj4ontGEOdjX2itWrsECq_CHM6nOjf_p_/exec', {
+    
+    fetch('https://script.google.com/macros/s/AKfycby_mfHVWZjbDX9PVBciXLNWPPW4F-wdoCN1FuvF5DXhYbFp0td0kU-TqSdcMf9-jB3s/exec', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
+            'Content-Type': 'application/x-www-form-urlencoded'
         },
-        body: json
+        body: queryParams
     })
         .then(async (response) => {
             let json = await response.json();
@@ -43,24 +41,21 @@ form.addEventListener('submit', function (e) {
 const popForm = document.getElementById('popForm');
 const popResult = document.getElementById('popResult');
 const popFormBtn = document.getElementById('popFormBtn');
-// const popup = document.getElementById("popup");
 
 popForm.addEventListener('submit', function (e) {
     e.preventDefault();
     console.log('submitted');
     const formData = new FormData(popForm);
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+    const queryParams = new URLSearchParams(formData).toString();
     popResult.style.display = "block";
     popResult.innerHTML = "just a sec.."
 
-    fetch('https://script.google.com/macros/s/AKfycbzg8yfNyLPFdjbAlEdcawTjyLvjhWHaMaMAj4ontGEOdjX2itWrsECq_CHM6nOjf_p_/exec', {
+    fetch('https://script.google.com/macros/s/AKfycby_mfHVWZjbDX9PVBciXLNWPPW4F-wdoCN1FuvF5DXhYbFp0td0kU-TqSdcMf9-jB3s/exec', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
+           'Content-Type': 'application/x-www-form-urlencoded'
         },
-        body: json
+        body: queryParams
     })
         .then(async (response) => {
             let json = await response.json();
