@@ -57,8 +57,8 @@
             </div>
         </div>
     </div>
-    <div
-        class="hero relative bg-[url('https://theascendacademy.in/assets/imgs/hero_bg.png')] bg-cover bg-top bg-no-repeat h-screen flex items-center justify-center px-4">
+    <div class="hero relative bg-cover bg-top bg-no-repeat h-screen flex items-center justify-center px-4"
+        style="background-image: url('./assets/imgs/hero_bg.png');">
         <div class="hero_content text-white md:text-center z-10" data-aos="fade-up" data-aos-duration="4000"
             data-aos-easing="ease-in-out">
             <h1 class="text-4xl md:text-5xl font-bold leading-[1.43]">Master the <span
@@ -234,17 +234,20 @@
                     class="text-primary-400">soul.</span></p>
         </div>
         <div class="grid grid-row-3 md:grid-cols-3 relative mt-8">
-            <div
-                class="group flex justify-center items-center text-white bg-[url('https://theascendacademy.in/assets/imgs/wealth_img.jpg')] bg-cover bg-center bg-no-repeat h-[300px]">
-                <h4 class="font-bold text-2xl z-[1] group-hover:scale-110">wealth<span class="text-primary-400">.</span></h4>
+            <div class="group flex justify-center items-center text-white bg-cover bg-center bg-no-repeat h-[300px]"
+                style="background-image: url('./assets/imgs/wealth_img.jpg');">
+                <h4 class="font-bold text-2xl z-[1] group-hover:scale-110">wealth<span class="text-primary-400">.</span>
+                </h4>
             </div>
-            <div
-                class="group flex justify-center items-center text-white bg-[url('https://theascendacademy.in/assets/imgs/body_img.jpg')] bg-cover bg-center bg-no-repeat h-[300px]">
-                <h4 class="font-bold text-2xl z-[1] group-hover:scale-110">body<span class="text-primary-400">.</span></h4>
+            <div class="group flex justify-center items-center text-white bg-cover bg-center bg-no-repeat h-[300px]"
+                style="background-image: url('./assets/imgs/body_img.jpg');">
+                <h4 class="font-bold text-2xl z-[1] group-hover:scale-110">body<span class="text-primary-400">.</span>
+                </h4>
             </div>
-            <div
-                class="group flex justify-center items-center text-white bg-[url('https://theascendacademy.in/assets/imgs/mind_img.jpg')] bg-cover bg-center bg-no-repeat h-[300px]">
-                <h4 class="font-bold text-2xl z-[1] group-hover:scale-110">mind<span class="text-primary-400">.</span></h4>
+            <div class="group flex justify-center items-center text-white bg-cover bg-center bg-no-repeat h-[300px]"
+                style="background-image: url('./assets/imgs/mind_img.jpg');">
+                <h4 class="font-bold text-2xl z-[1] group-hover:scale-110">mind<span class="text-primary-400">.</span>
+                </h4>
             </div>
             <div class="w-full h-full bg-black/50 absolute z-0"></div>
         </div>
@@ -351,7 +354,8 @@
             <div class="mt-16 flex flex-col gap-16">
                 <div class="flex md:flex-row flex-col gap-4">
                     <div
-                        class="image w-[350px] h-[300px] bg-[url('https://theascendacademy.in/assets/imgs/dropshipping.jpg')] bg-cover bg-center bg-no-repeat rounded-lg">
+                        class="image w-[350px] h-[300px] bg-cover bg-center bg-no-repeat rounded-lg"
+                        style="background-image: url('./assets/imgs/dropshipping.jpg');">
                     </div>
                     <div class="content text-white max-w-md">
                         <h4 class="text-3xl font-semibold">The Ultimate Dropshipping Course</h4>
@@ -367,7 +371,8 @@
                 </div>
                 <div class="flex md:flex-row flex-col gap-4">
                     <div
-                        class="image w-[350px] h-[300px] bg-[url('https://theascendacademy.in/assets/imgs/affiliate.jpg')] bg-cover bg-center bg-no-repeat rounded-lg">
+                        class="image w-[350px] h-[300px] bg-cover bg-center bg-no-repeat rounded-lg"
+                        style="background-image: url('./assets/imgs/affiliate.jpg');">
                     </div>
                     <div class="content text-white max-w-md">
                         <h4 class="text-3xl font-semibold">Affiliate Marketing Mastery: From Beginner to Pro</h4>
@@ -381,8 +386,8 @@
                     </div>
                 </div>
                 <div class="flex md:flex-row flex-col gap-4">
-                    <div
-                        class="image w-[350px] h-[300px] bg-[url('https://theascendacademy.in/assets/imgs/content.jpg')] bg-cover bg-center bg-no-repeat rounded-lg">
+                    <div class="image w-[350px] h-[300px] bg-cover bg-center bg-no-repeat rounded-lg"
+                        style="background-image: url('./assets/imgs/content.jpg');">
                     </div>
                     <div class="content text-white max-w-md">
                         <h4 class="text-3xl font-semibold">Content Writing Mastery: Crafting Words That Convert</h4>
@@ -501,7 +506,7 @@
             e.preventDefault();
             const targetId = this.getAttribute("href").substring(1);
             const targetElement = document.getElementById(targetId);
-            const offset = 150; 
+            const offset = 150;
             const targetPosition = targetElement.offsetTop - offset;
 
             window.scrollTo({
