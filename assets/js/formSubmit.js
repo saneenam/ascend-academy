@@ -9,7 +9,7 @@ form.addEventListener('submit', function (e) {
     result.style.display = "block";
     result.innerHTML = "just a sec.."
     
-    fetch('https://script.google.com/macros/s/AKfycby_mfHVWZjbDX9PVBciXLNWPPW4F-wdoCN1FuvF5DXhYbFp0td0kU-TqSdcMf9-jB3s/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbymxQe-VkqS5csDNoNtOhRov8FWHzPb3cygCs2FX5jQ-B0wAonpNc5EltWN4aOuX2S6/exec', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
@@ -50,7 +50,7 @@ popForm.addEventListener('submit', function (e) {
     popResult.style.display = "block";
     popResult.innerHTML = "just a sec.."
 
-    fetch('https://script.google.com/macros/s/AKfycby_mfHVWZjbDX9PVBciXLNWPPW4F-wdoCN1FuvF5DXhYbFp0td0kU-TqSdcMf9-jB3s/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbymxQe-VkqS5csDNoNtOhRov8FWHzPb3cygCs2FX5jQ-B0wAonpNc5EltWN4aOuX2S6/exec', {
         method: 'POST',
         headers: {
            'Content-Type': 'application/x-www-form-urlencoded'
